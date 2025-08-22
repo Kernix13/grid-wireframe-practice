@@ -26,7 +26,6 @@ article {
   background-color: red;
   padding: 1rem 0;
   margin: 1rem 0;
-  border-radius: 0.75rem;
   text-align: center;
 }
 
@@ -38,7 +37,6 @@ header,
 aside,
 footer,
 section {
-  border-radius: 0.75rem;
   text-align: center;
   margin: 0.5rem;
 }
@@ -60,6 +58,14 @@ body, main {
     grid-area: "main";
     display: grid;
     grid-template-columns: 20% 1fr 20%;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .grid article {
+    padding: 7rem 0;
   }
 
 }
