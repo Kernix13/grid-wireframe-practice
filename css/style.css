@@ -54,18 +54,29 @@ body, main {
 }
 
 @media (min-width: 900px) {
+  body {
+    grid-template-rows: 20% 1fr 20%;
+  }
   main {
-    grid-area: "main";
     display: grid;
     grid-template-columns: 20% 1fr 20%;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: end;
   }
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: end;
     gap: 1rem;
   }
+  /*
   .grid article {
     padding: 7rem 0;
   }
+  */
 
 }
